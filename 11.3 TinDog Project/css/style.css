@@ -1,17 +1,24 @@
 .gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  background: linear-gradient(0deg, #bc05f1, #f70579, #f76705, #3355bf, #8d3cfd);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 35%}
+  50%{background-position:100% 66%}
+  100%{background-position:0% 35%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 35%}
+  50%{background-position:100% 66%}
+  100%{background-position:0% 35%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 35%}
+  50%{background-position:100% 66%}
+  100%{background-position:0% 35%}
 }
